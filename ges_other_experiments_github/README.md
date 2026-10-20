@@ -1,9 +1,3 @@
-# GES numerical experiments
-
-Two self-contained implementations extracted from the final experiment notebooks.
-Each folder contains three Python files (models, experiment runner and plotting),
-a short README, pinned dependencies, small reference tables and a validation report.
-
 | Folder | Experiment | Tested Python |
 |---|---|---|
 | [`realised_covariance/`](realised_covariance/README.md) | Five-asset covariance forecasting with seven methods, portfolio/tail scores and DM/MCS inference | 3.14.6 |
