@@ -1,0 +1,6 @@
+# Verified environment: CPython 3.13.15 (Windows x64).
+numpy==2.5.3
+pandas==3.0.6
+scipy==1.18.1
+matplotlib==3.11.2
+arch==8.0.0

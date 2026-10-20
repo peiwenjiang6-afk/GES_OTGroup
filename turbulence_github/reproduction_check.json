@@ -1,0 +1,94 @@
+{
+  "status": "PASS",
+  "validation_date": "2026-10-20",
+  "validation": "Both configurations rerun from the original raw TXT using the packaged scripts.",
+  "environment": {
+    "python": "3.13.15",
+    "packages": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.6",
+      "scipy": "1.18.1",
+      "matplotlib": "3.11.2",
+      "arch": "8.0.0"
+    },
+    "platform": "Windows x64"
+  },
+  "raw_md5": "b6cfab0e8af9b4b2052d754ccfb29ee5",
+  "source_sha256": {
+    "wes_models.py": "e2a315c4cb7291debf0c003d29f793935f1c684c4b99f822213c8e44572c227d",
+    "turbulence_experiment.py": "11e8fadcde1f384b43da3d18482195a94307cf8a829859026dfc349649546eca",
+    "plot_turbulence.py": "451cddc795d5f8d10b3079dd33c4275e14a57526eabd23bb65e7e3d60389c923",
+    "README.md": "7f22638b023d435579cb9e58d5faa7cd64d9809eabbaa348ca8231cc8d443c9e",
+    "requirements.txt": "bdfa730a3e19b7459d277473a7ea1561b9a3e5e7cdfa8c6b2de7a97a999b1e93",
+    "reference_results.csv": "1eb6202e1aa9352ff087f66dc728d1830abbc059c5739d2be3c5fef303dcfd99",
+    ".gitignore": "9aa08d4106d7c69b1e2ab83cd5d15fb0c1579b51e85edfd7eb4a9ad282a813fe"
+  },
+  "summary_verification": {
+    "status": "PASS",
+    "rows": 40,
+    "rtol": 1e-08,
+    "atol": 1e-10,
+    "fields": [
+      "Mean squared W2 error",
+      "Root mean squared W2 error",
+      "DM statistic vs GES",
+      "DM p-value vs GES",
+      "MCS p-value",
+      "In 90% MCS"
+    ],
+    "maximum_absolute_difference": 8.881784197001252e-16
+  },
+  "individual_array_tolerance": {
+    "rtol": 1e-12,
+    "atol": 1e-12
+  },
+  "predicted_quantile_values_compared": 8100000,
+  "configurations": [
+    {
+      "block_seconds": 60,
+      "status": "PASS",
+      "reference": "turbulence_results_60s_corrected",
+      "panel_shape": [
+        450,
+        5,
+        1000
+      ],
+      "predicted_quantile_values_compared": 2700000,
+      "comparisons": 60,
+      "maximum_absolute_difference": 0.0,
+      "comparisons_with_nonzero_difference": {},
+      "checked": "All observed quantiles, four model forecasts, alpha/beta paths, probability grids, timestamps, sensor IDs, heights and per-block losses",
+      "figures_generated": [
+        "fig3_turbulence_60s.pdf",
+        "fig3_turbulence_60s.png",
+        "fig_s_turbulence_all_heights.pdf",
+        "fig_s_turbulence_all_heights.png",
+        "fig_s_turbulence_alpha.pdf",
+        "fig_s_turbulence_alpha.png"
+      ]
+    },
+    {
+      "block_seconds": 30,
+      "status": "PASS",
+      "reference": "turbulence_results_30s_corrected",
+      "panel_shape": [
+        900,
+        5,
+        1000
+      ],
+      "predicted_quantile_values_compared": 5400000,
+      "comparisons": 60,
+      "maximum_absolute_difference": 0.0,
+      "comparisons_with_nonzero_difference": {},
+      "checked": "All observed quantiles, four model forecasts, alpha/beta paths, probability grids, timestamps, sensor IDs, heights and per-block losses",
+      "figures_generated": [
+        "fig3_turbulence_30s.pdf",
+        "fig3_turbulence_30s.png",
+        "fig_s_turbulence_all_heights.pdf",
+        "fig_s_turbulence_all_heights.png",
+        "fig_s_turbulence_alpha.pdf",
+        "fig_s_turbulence_alpha.png"
+      ]
+    }
+  ]
+}
