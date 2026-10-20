@@ -1,0 +1,5 @@
+Benchmark,GES significantly better,GES significantly worse,Total clients
+FPCA-ridge FAR(1),2,29,156
+Random walk,139,0,156
+Seasonal naive (lag 52),155,0,156
+Running Fréchet mean,153,0,156

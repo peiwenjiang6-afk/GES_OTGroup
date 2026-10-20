@@ -1,0 +1,97 @@
+{
+  "status": "passed",
+  "rtol": 2e-06,
+  "atol": 1e-08,
+  "tables": [
+    {
+      "file": "electricity_aggregate_dm_tests.csv",
+      "rows": 4,
+      "max_absolute_difference": 3.1015190415928373e-12
+    },
+    {
+      "file": "electricity_aggregate_forecast_table.csv",
+      "rows": 5,
+      "max_absolute_difference": 4.092726157978177e-12
+    },
+    {
+      "file": "electricity_panel_main_table.csv",
+      "rows": 5,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "electricity_panel_pooled_normalized_dm.csv",
+      "rows": 4,
+      "max_absolute_difference": 2.55351295663786e-15
+    },
+    {
+      "file": "electricity_per_client_dm_counts.csv",
+      "rows": 4,
+      "max_absolute_difference": 0.0
+    }
+  ],
+  "full_raw_data_rerun": true,
+  "clients": 156,
+  "weeks": 208,
+  "training_weeks": 145,
+  "evaluation_weeks": 63,
+  "methods": 5,
+  "weekly_method_losses_compared": 49455,
+  "additional_comparisons": [
+    {
+      "file": "electricity_aggregate_weekly_losses.csv",
+      "rows": 63,
+      "numeric_values_compared": 378,
+      "max_absolute_difference": 2.000888343900442e-10
+    },
+    {
+      "file": "electricity_client_summary.csv",
+      "rows": 156,
+      "numeric_values_compared": 3432,
+      "max_absolute_difference": 1.862645149230957e-09
+    },
+    {
+      "file": "electricity_panel_weekly_losses.csv",
+      "rows": 9828,
+      "numeric_values_compared": 68796,
+      "max_absolute_difference": 8.009374141693115e-08
+    },
+    {
+      "file": "electricity_dst_correction_log.csv",
+      "rows": 8,
+      "numeric_values_compared": 16,
+      "max_absolute_difference": 0
+    },
+    {
+      "file": "electricity_per_client_dm.csv",
+      "client_benchmark_pairs": 624,
+      "numeric_values_compared": 1248,
+      "max_absolute_difference": 1.6209256159527285e-14
+    }
+  ],
+  "deep_comparison_tolerances": {
+    "rtol": 1e-10,
+    "atol": 1e-08
+  },
+  "environment": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "threadpoolctl": "3.7.0"
+  },
+  "python": "3.13.15",
+  "data_sha256": "f6c4d0e0df12ecdb9ea008dd6eef3518adb52c559d04a9bac2e1b81dcfc8d4e1",
+  "figures_generated": 10,
+  "figure_formats": [
+    "pdf",
+    "png"
+  ],
+  "note": "Compared with original notebook CSV exports; no fresh virtual environment install was performed.",
+  "source_notebook_sha256": "6640279c47a5452e4422b61b00300232c59abb6ccc335a4a92b87c598c1b0dca",
+  "smoke_checks": [
+    "Python AST parsing passed for all three modules",
+    "Imports passed without running the experiment",
+    "Both command-line --help entry points passed",
+    "Package source, README, requirements and report contain no personal absolute paths"
+  ]
+}

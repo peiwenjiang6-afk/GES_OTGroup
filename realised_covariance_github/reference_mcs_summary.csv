@@ -1,0 +1,8 @@
+,AIRM2,Frobenius,NLL
+GES,0.000,0.319*,0.000
+Geodesic AR,0.000,0.001,0.000
+Scalar vech-HAR,0.000,0.001,0.000
+HAR-DRD,1.000*,1.000*,1.000*
+EWMA,0.000,0.001,0.000
+Random walk,0.000,0.000,0.000
+Frechet mean,0.000,0.000,0.000

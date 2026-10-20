@@ -1,0 +1,68 @@
+{
+  "python": "3.14.6",
+  "scope": "31 forecast targets spanning two refits; full input reconstruction; full-sample score/inference regeneration from saved daily outputs. Full 5060-day forecast rerun not performed.",
+  "input": {
+    "retained_days": 6060,
+    "assets": [
+      "AXP.N",
+      "CAT.N",
+      "IBM.N",
+      "KO.N",
+      "MCD.N"
+    ],
+    "first": "2000-01-04",
+    "last": "2026-07-31",
+    "all_covariances_exact": true
+  },
+  "full_sample_statistics": {
+    "forecast_summary_max_abs_diff": 0.0,
+    "portfolio_summary_max_abs_diff": 4.218847493575595e-15,
+    "tail_summary_max_abs_diff": 2.4424906541753444e-13,
+    "MCS_all_21_printed_values_exact": true,
+    "DM_max_abs_diff": 5.551115123125783e-16
+  },
+  "source_sha256": {
+    "realised_covariance.py": "ec320c687a605979e67198a89a25d87db1107a0cf1f7411d8f50b5d52bf7f2a0",
+    "section5_1_realised_covariance_GES_vechHAR_HARDRD_revised.ipynb": "3355704d1f45796978e7c7b23e06eaaf14dcfcad7c4cacfbb7eccf84671cccf0",
+    "real_cov_5d.csv.gz": "72b5a3a23b19def831256dbe90b74532fff92d8ed367f54e9643cba91ae27e59"
+  },
+  "fresh_forecast_check": {
+    "refits": 2,
+    "forecast_targets": 31,
+    "methods": 7,
+    "rtol": 1e-12,
+    "atol": 1e-12,
+    "checks": {
+      "forecast_scores": {
+        "rows": 217,
+        "max_abs_diff": 2.6645352591003757e-14
+      },
+      "portfolio_daily": {
+        "rows": 248,
+        "max_abs_diff": 7.815970093361102e-14
+      },
+      "GES_covariance": {
+        "targets": 31,
+        "max_abs_diff": 0.0,
+        "dates_and_observed_exact": true
+      }
+    }
+  },
+  "status": "passed",
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "scipy": "1.18.0",
+    "matplotlib": "3.11.0",
+    "exchange-calendars": "4.13.2",
+    "threadpoolctl": "3.5.0"
+  },
+  "figures": {
+    "sets_generated": 4,
+    "formats": [
+      "pdf",
+      "png"
+    ],
+    "visual_check": "component grid checked for labels, legend, layout and line alignment"
+  }
+}
