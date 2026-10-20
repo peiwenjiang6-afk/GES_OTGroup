@@ -1,8 +1,5 @@
 # Realised covariance forecasting
 
-Compact Python implementation of the Section 5.1 experiment, extracted from
-`section5_1_realised_covariance_GES_vechHAR_HARDRD_revised.ipynb` and its loader.
-
 - `covariance_models.py`: SPD geometry and seven forecasting methods.
 - `covariance_experiment.py`: price cleaning, rolling forecasts, scores and inference.
 - `plot_covariance.py`: observed/GES dynamics, all components, cumulative losses and alpha.
