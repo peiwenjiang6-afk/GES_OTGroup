@@ -1,8 +1,6 @@
 # Functional electricity-load experiment
 
-Concise numerical implementation of the final functional L2 notebook: aggregate
-weekly load curves and a fixed panel of 156 electricity clients. The code includes
-GES, FPCA-ridge FAR(1), random walk, 52-week seasonal naive and running Fréchet mean.
+The code includes GES, FPCA-ridge FAR(1), random walk, 52-week seasonal naive and running Fréchet mean.
 
 ## Files
 
