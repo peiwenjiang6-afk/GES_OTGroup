@@ -77,3 +77,6 @@ compares the new results with the included reference tables.
 Existing results are not overwritten by the experiment scripts. To repeat a run,
 choose a new folder with `--output` and use that folder when plotting.
 Each experiment also includes a report describing the checks already completed.
+
+
+This code is available under the [MIT License](LICENSE). Datasets remain subject to their own licences and access conditions.
