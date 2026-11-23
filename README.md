@@ -1,15 +1,12 @@
 # GES numerical experiments
 
-Code for the empirical experiments in:
+Code for the empirical experiments in: **Exponential Smoothing for Time Series of Random Objects**
 
-**[Exponential Smoothing for Time Series of Random Objects]**
+**Authors:** Takuo Matsubara, Peiwen Jiang, Wilson Ye Chen, Minh-Ngoc Tran
 
-**Authors:** [Takuo Matsubara], [Peiwen Jiang], [Wilson Ye Chen], [Minh-Ngoc Tran]
+**Affiliations:** The University of Sydney Business School
 
-**Affiliations:**
-- The University of Sydney Business School
-
-**Paper:** (https://arxiv.org/abs/2609.20274)
+**Paper:** https://arxiv.org/abs/2609.20274
 
 ## Citation
 
