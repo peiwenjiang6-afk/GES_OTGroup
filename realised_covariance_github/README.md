@@ -6,8 +6,6 @@
 
 ## Setup and input
 
-Validated with Python **3.14.6** and the pinned versions in `requirements.txt`:
-
 ```bash
 python -m venv .venv
 # PowerShell: .venv\Scripts\Activate.ps1
