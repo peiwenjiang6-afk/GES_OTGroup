@@ -76,3 +76,6 @@ and coefficients are constrained to `[-0.999, 0.999]`.
 - Chamecki and Isard (2026), [turbulence dataset](https://doi.org/10.5281/zenodo.20045165), CC BY 4.0; raw data are not bundled.
 - Zhu and Müller (2023), [Autoregressive optimal transport models](https://doi.org/10.1093/jrsssb/qkad051).
 
+
+This code is available under the [MIT License](LICENSE).
+Datasets remain subject to their own licences and access conditions.
