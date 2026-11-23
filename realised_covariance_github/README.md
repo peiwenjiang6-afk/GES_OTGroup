@@ -15,12 +15,6 @@ python -m venv .venv
 python -m pip install -r requirements.txt
 ```
 
-Supply your licensed Refinitiv DataScope extract as `data/real_cov_5d.csv.gz`.
-It must contain `#RIC`, `Date-Time`, and `Last`, exactly five assets, and
-exchange-local ISO timestamps with UTC offsets. The licensed raw data are not
-redistributed. The release validation report records the original input SHA-256
-and asset order; another extract need not reproduce the paper's numbers.
-
 ```bash
 python covariance_experiment.py --data data/real_cov_5d.csv.gz --output results
 python plot_covariance.py --results results
