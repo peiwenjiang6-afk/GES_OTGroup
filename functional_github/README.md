@@ -63,3 +63,6 @@ client IDs, aggregate forecasts, data/settings metadata, and comparison tables.
 minor platform/BLAS differences are expected. BLAS is limited to one thread
 for these small matrix problems. Optional MCS, exploratory outlier sensitivity
 cells and interactive notebook diagnostics are omitted.
+
+This code is available under the [MIT License](LICENSE).
+Datasets remain subject to their own licences and access conditions.
