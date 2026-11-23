@@ -4,7 +4,7 @@ Code for the empirical experiments in: **Exponential Smoothing for Time Series o
 
 **Authors:** Takuo Matsubara, Peiwen Jiang, Wilson Ye Chen, Minh-Ngoc Tran
 
-**Affiliations:** The University of Sydney Business School
+**Affiliation:** The University of Sydney Business School
 
 **Paper:** https://arxiv.org/abs/2609.20274
 
