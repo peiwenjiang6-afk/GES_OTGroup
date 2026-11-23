@@ -35,14 +35,12 @@ The runner refuses to overwrite a nonempty output folder; use `--output another_
 
 ## Fixed numerical design
 
-- Read the 370-client quarter-hour data as float32, matching the notebook.
-  Repair the four all-zero spring DST slots by time interpolation. Halve the
+- Repair the four all-zero spring DST slots by time interpolation. Halve the
   four autumn repeated-hour slots only when at least three have a cross-client
   total between 1.5 and 2.5 times the adjacent-Sunday baseline. Save the repair log.
 - Shift interval-end timestamps back 15 minutes. Select clients using only the
   initial training interval: at least 90% active days, 95% active weeks, activity
-  in the first/last 30 days, and hourly standard deviation above 1e-8. The activity
-  check retains the notebook's Sunday-based bins; curve weeks start Monday.
+  in the first/last 30 days, and hourly standard deviation above 1e-8.
 - Average quarter-hours into hours. Each curve has 168 hourly coordinates;
   retain 208 complete calendar weeks, with 145 training and 63 evaluation weeks.
   The aggregate is the cross-sectional mean of the fixed 156-client panel.
@@ -65,9 +63,3 @@ client IDs, aggregate forecasts, data/settings metadata, and comparison tables.
 minor platform/BLAS differences are expected. BLAS is limited to one thread
 for these small matrix problems. Optional MCS, exploratory outlier sensitivity
 cells and interactive notebook diagnostics are omitted.
-
-The heatmaps share the observed/forecast colour scale; the signed-error panel
-uses a symmetric scale. All figures are exported as PDF and 300-dpi PNG.
-
-No code license has been assigned in this package. Choose a license before
-public release; the dataset's terms are separate from the code.

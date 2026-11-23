@@ -70,7 +70,3 @@ tables. `validation_report.json` records exactly what was checked. It separates
 the 31-target fresh forecast check from full-sample tables regenerated using
 the previously saved daily results; it does **not** claim a complete fresh
 forecast rerun. Numerical differences across BLAS/library versions are possible.
-
-Raw data, generated results and notebooks are excluded from the package.
-No code license has been assigned; the repository owner should select one
-before public redistribution. Data access remains subject to the data licence.

@@ -69,18 +69,10 @@ Heights are dependent; no inference pools them as independent replications.
 ATM uses common endpoints, monotone linear transport interpolation, direct
 reverse-pair inverses, and 2,201-point spatial trapezoidal integration. Support
 uses only past observations with 5% padding; quantile regularization is `1e-4`,
-and coefficients are constrained to `[-0.999, 0.999]`. This is a numerical
-adaptation of the paper's common-interval criterion, **not an exact port of the
-authors' natural-spline R implementation**. No legacy constant-tail code is used.
-
-The package intentionally excludes exploratory searches and numerical audit sweeps.
-Pinned direct dependencies describe the tested environment; exact results on other
-Python/package/platform combinations have not been established.
+and coefficients are constrained to `[-0.999, 0.999]`.
 
 ## Sources
 
 - Chamecki and Isard (2026), [turbulence dataset](https://doi.org/10.5281/zenodo.20045165), CC BY 4.0; raw data are not bundled.
 - Zhu and Müller (2023), [Autoregressive optimal transport models](https://doi.org/10.1093/jrsssb/qkad051).
 
-No code license has been assigned in this package; the dataset license applies to
-the data, not automatically to this implementation.
